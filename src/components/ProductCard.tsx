@@ -42,7 +42,7 @@ const ProductCard = ({
   };
 
   return (
-    <Card className="card-product group overflow-hidden h-full flex flex-col">
+    <Card className="card-product group overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300">
       <div className="relative overflow-hidden">
         <img
           src={image}
@@ -118,22 +118,24 @@ const ProductCard = ({
         </div>
       </CardContent>
 
-      <CardFooter className="p-4 pt-0 space-y-2 mt-auto">
-        <div className="flex gap-2 w-full">
-          <Button 
-            onClick={() => onViewDetails?.(id)}
-            variant="outline"
-            className="flex-1"
-          >
-            <Eye size={16} className="mr-2" />
-            View Details
-          </Button>
+      <CardFooter className="p-4 pt-0 mt-auto">
+        <div className="flex flex-col gap-2 w-full">
           <Button 
             onClick={handleAddToCart}
-            className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+            size="sm"
           >
             <ShoppingCart size={16} className="mr-2" />
             Add to Cart
+          </Button>
+          <Button 
+            onClick={() => onViewDetails?.(id)}
+            variant="outline"
+            className="w-full"
+            size="sm"
+          >
+            <Eye size={16} className="mr-2" />
+            View Details
           </Button>
         </div>
       </CardFooter>

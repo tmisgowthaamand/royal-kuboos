@@ -92,8 +92,10 @@ const HomePage = () => {
   ];
 
   const handleAddToCart = (productId: string, quantity: number) => {
+    console.log('Adding to cart:', productId, quantity);
     const product = featuredProducts.find(p => p.id === productId);
     if (product) {
+      console.log('Product found:', product);
       addItem({
         id: product.id,
         name: product.name,
@@ -108,6 +110,8 @@ const HomePage = () => {
         title: "Added to Cart",
         description: `${quantity}x ${product.name} added to your cart`,
       });
+    } else {
+      console.error('Product not found:', productId);
     }
   };
 
@@ -212,7 +216,7 @@ const HomePage = () => {
               Discover our signature collection of freshly baked kuboos, chapati, and parotta.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center mb-8">
             {featuredProducts.map((product) => (
               <div key={product.id} className="w-full max-w-sm">
                 <ProductCard
