@@ -41,7 +41,7 @@ const ContactPage = () => {
     {
       icon: MapPin,
       title: "Visit Our Bakery",
-      content: "No.19, MGR STREET PERIYAR NAGAR\nMADAMPAKKAM, CHENNAI",
+      content: "No.19, MGR STREET PERIYAR NAGAR\nMADAMBAKKAM, CHENNAI - 600126",
       action: "Get Directions",
       link: "https://maps.google.com"
     },
@@ -283,7 +283,7 @@ const ContactPage = () => {
                 <h3 className="font-heading text-xl font-semibold mb-2">ROYAL KUBOOS CHENNAI</h3>
                 <p className="text-muted-foreground mb-4">
                   No.19, MGR STREET PERIYAR NAGAR<br />
-                  MADAMPAKKAM, CHENNAI
+                  MADAMBAKKAM, CHENNAI - 600126
                 </p>
                 <Button variant="fresh">
                   View on Google Maps

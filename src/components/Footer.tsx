@@ -69,7 +69,7 @@ const Footer = () => {
                 <div>
                   <p className="text-deep-brown-foreground/80 text-sm">
                     No.19, MGR STREET PERIYAR NAGAR<br />
-                    MADAMPAKKAM, CHENNAI
+                    MADAMBAKKAM, CHENNAI - 600126
                   </p>
                 </div>
               </div>
