@@ -29,7 +29,7 @@ const CheckoutPage = () => {
   const [paymentMethod, setPaymentMethod] = useState("");
 
   const subtotal = state.total;
-  const gstAmount = Math.round(subtotal * 0.18);
+  const gstAmount = Math.round(subtotal * 0.05);
   const deliveryFee = 0; // Free delivery
   const totalAmount = subtotal + gstAmount + deliveryFee;
 
@@ -306,7 +306,7 @@ const CheckoutPage = () => {
                     <span className="text-green-600">Free</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span>GST (18%)</span>
+                    <span>GST (5%)</span>
                     <span>₹{gstAmount}</span>
                   </div>
                 </div>

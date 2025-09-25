@@ -189,8 +189,8 @@ const CartPage = () => {
                     <span className="text-green-600">Free</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span>GST (18%)</span>
-                    <span>₹{Math.round(state.total * 0.18)}</span>
+                    <span>GST (5%)</span>
+                    <span>₹{Math.round(state.total * 0.05)}</span>
                   </div>
                 </div>
 
@@ -198,7 +198,7 @@ const CartPage = () => {
 
                 <div className="flex justify-between font-heading font-bold text-lg">
                   <span>Total</span>
-                  <span className="text-primary">₹{Math.round(state.total * 1.18)}</span>
+                  <span className="text-primary">₹{Math.round(state.total * 1.05)}</span>
                 </div>
 
                 <div className="pt-4 space-y-3">
