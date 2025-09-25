@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { ArrowLeft, CreditCard, Smartphone, Building2, MapPin, User, Phone, Mail } from "lucide-react";
+import { ArrowLeft, CreditCard, Building2, MapPin, User, Phone, Mail } from "lucide-react";
 import { useCart } from "@/hooks/use-cart";
 import { useNavigate } from "react-router-dom";
 
@@ -258,27 +258,6 @@ const CheckoutPage = () => {
                       </Label>
                     </div>
 
-                    <div className="flex items-center space-x-3 p-4 border rounded-lg hover:bg-muted/50 cursor-pointer">
-                      <RadioGroupItem value="upi" id="upi" />
-                      <Label htmlFor="upi" className="flex items-center gap-3 cursor-pointer flex-1">
-                        <Smartphone size={20} className="text-primary" />
-                        <div>
-                          <p className="font-semibold">UPI Payment</p>
-                          <p className="text-sm text-muted-foreground">Pay via Google Pay, PhonePe, Paytm</p>
-                        </div>
-                      </Label>
-                    </div>
-
-                    <div className="flex items-center space-x-3 p-4 border rounded-lg hover:bg-muted/50 cursor-pointer">
-                      <RadioGroupItem value="cod" id="cod" />
-                      <Label htmlFor="cod" className="flex items-center gap-3 cursor-pointer flex-1">
-                        <Building2 size={20} className="text-primary" />
-                        <div>
-                          <p className="font-semibold">Cash on Delivery</p>
-                          <p className="text-sm text-muted-foreground">Pay when your order arrives</p>
-                        </div>
-                      </Label>
-                    </div>
                   </div>
                 </RadioGroup>
               </CardContent>
